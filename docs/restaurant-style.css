@@ -1,49 +1,146 @@
+/* GLOBAL */
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f5f5;
+    font-family: "Inter", "Segoe UI", Arial, sans-serif;
+    background-color: #f4f6f5;
     margin: 0;
     padding: 0;
+    color: #1f2933;
 }
 
-header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 30px;
-    text-align: center;
+/* HEADER */
+
+.main-header {
+    background-color: #1f2933;
+    color: #ffffff;
+    padding: 18px 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-header h1 {
+/* LEFT: hamburger + name */
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+/* Hamburger */
+.hamburger {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Restaurant name */
+.header-left h1 {
     margin: 0;
-    font-size: 36px;
+    margin-left: 50px; 
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
 }
+
+/* CENTER NAV */
+.nav-links {
+    display: flex;
+    margin-right: 15%;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    position: relative;
+}
+
+/* RIGHT: cart */
+.header-right {
+    font-size: 22px;
+    cursor: pointer;
+    color: #10b981;
+}
+
+/* MAIN CONTENT */
 
 section {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1100px;
+    margin: 50px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
 }
 
-h2 {
-    color: #2c3e50;
+section > h2 {
     text-align: center;
-    font-size: 28px;
+    font-size: 34px;
+    color: #1f2933;
+    margin-bottom: 18px;
 }
 
-p {
+section > p {
     text-align: center;
-    color: #555;
-    line-height: 1.6;
-    margin-bottom: 30px;
+    font-size: 16px;
+    color: #4b5563;
+    line-height: 1.8;
+    margin-bottom: 45px;
 }
 
 h5 {
-    color: #e74c3c;
-    font-size: 22px;
-    margin-bottom: 15px;
+    text-align: center;
+    font-size: 24px;
+    color: #10b981;
+    margin-bottom: 30px;
 }
+
+/* DISH CARDS */
+
+.dish-container {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.dish-card {
+    width: 30%;
+    background-color: #ffffff;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.dish-card img {
+    width: 100%;
+    border-radius: 14px;
+    margin-bottom: 18px;
+}
+
+.dish-card h4 {
+    font-size: 20px;
+    color: #1f2933;
+    margin-bottom: 10px;
+}
+
+.dish-card p {
+    font-size: 14px;
+    color: #6b7280;
+}
+
+/* Price */
+
+.price {
+    display: inline-block;
+    margin-top: 12px;
+    font-size: 18px;
+    color: #10b981;
+    font-weight: 600;
+}
+
+/* MENU TABLE */
 
 table {
     width: 100%;
@@ -52,26 +149,26 @@ table {
 }
 
 thead {
-    background-color: #34495e;
-    color: white;
+    background-color: #1f2933;
+    color: #ffffff;
 }
 
-th, td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+th,td {
+    padding: 18px;
+    border-bottom: 1px solid #e5e7eb;
 }
 
-th {
-    font-weight: bold;
-    text-transform: uppercase;
+/* FOOTER */
+
+footer {
+    background-color: #1f2933;
+    color: #e5e7eb;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
 }
 
-tbody tr:hover {
-    background-color: #f9f9f9;
-}
-
-.price {
-    color: #27ae60;
-    font-weight: bold;
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
