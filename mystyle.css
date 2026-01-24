@@ -13,9 +13,14 @@ a{
 }
 
 /*Utilities*/
+
+.container{
+    width: 80%;
+    margin: 50px auto;
+}
 .link-selected{
     color: rgb(108, 8, 8);
-    text-decoration: none;
+    text-decoration: underline;
 }
 .btn{
     background-color: #222222;
@@ -83,4 +88,65 @@ a{
 .dish-container{
     background-color: #222222;
     color: white;
+}
+
+/* To Go */
+.form-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-img{
+    margin-right: 20px;
+}
+.form-img img{
+    width: 50%;
+    flex-shrink: 0;
+}
+.form-container{
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-control{
+    margin: 10px auto;
+}
+.form-control input,
+.form-control textarea,
+.form-control select{
+    width: 100%;
+    padding: 3px;
+}
+.form-control label{
+    font-size: 12px;
+}
+
+/* Payment Form */
+.payment-section{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 12px;
+}
+
+.payment-form{
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.form-group{
+    margin: 10px auto;
+}
+.form-group input,
+.form-group textarea,
+.form-group select{
+    width: 100%;
+    padding: 3px;
+}
+.form-group label{
+    font-size: 12px;
 }
