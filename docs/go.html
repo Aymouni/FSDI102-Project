@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bella Italia Bistro</title>
+    <link rel="stylesheet" href="restaurant-style.css">
+    <script src="https://kit.fontawesome.com/337be747ec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-left">
+            <i class="fa-solid fa-bars hamburger"></i>
+            <h1>Bella Italia Bistro</h1>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="go.html">To Go</a>
+        </nav>
+
+        <div class="header-right">
+            <a href="checkout.html" class="cart-link">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>
+    </header>
+
+     <section class="to-go-layout">
+
+        <!-- Featured Dishes (Left Column) -->
+        <aside class="featured-column">
+            
+            <div class="featured-dishes">
+                <h5>Featured Dishes</h5>
+
+                <div class="dish-card">
+                    <img src="images/spaghetti_carbonara.png" alt="Spaghetti Carbonara" class="featured-img">
+                    <h4>Spaghetti Carbonara</h4>
+                    <p>Creamy pasta with pancetta and parmesan</p>
+                </div>
+
+                <div class="dish-card">
+                    <img src="images/margherita.png" alt="Margherita Pizza" class="featured-img">
+                    <h4>Margherita Pizza</h4>
+                    <p>Fresh mozzarella, basil, and tomato sauce</p>
+                </div>
+
+                <div class="dish-card">
+                    <img src="images/Alfredo.png" alt="Chicken Alfredo" class="featured-img">
+                    <h4>Chicken Alfredo</h4>
+                    <p>Grilled chicken with creamy Alfredo sauce</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- To-Go Order Form (Right Column) -->
+        <div class="order-column">
+            <h2>Order To Go</h2>
+            <p>Select your items below and add them to your cart.</p>
+
+            <form action="checkout.html">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Select</th>
+                            <th>Dish</th>
+                            <th>Price</th>
+                            <th>Qty</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="images/Lasagna_Bolognese_thumbnail.png" alt="Lasagna Bolognese" class="menu-thumb">
+                                Lasagna Bolognese
+                            </td>
+                            <td class="price">$17.99</td>
+                            <td><input type="number" min="1" value="1"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="images/Penne_Arrabbiata_thumbnail.png" alt="Penne Arrabbiata" class="menu-thumb">
+                                Penne Arrabbiata
+                            </td>
+                            <td class="price">$14.25</td>
+                            <td><input type="number" min="1" value="1"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="images/Seafood_Linguine_thumbnail.png" alt="Seafood Linguine" class="menu-thumb">
+                                Seafood Linguine
+                            </td>
+                            <td class="price">$21.50</td>
+                            <td><input type="number" min="1" value="1"></td>
+                        </tr>
+
+                        <tr>
+                            <td><input type="checkbox"></td>
+                            <td>
+                                <img src="images/Gnocchi_Pesto_thumbnail.png" alt="Gnocchi Pesto" class="menu-thumb">
+                                Gnocchi Pesto
+                            </td>
+                            <td class="price">$16.50</td>
+                            <td><input type="number" min="1" value="1"></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <!-- Total -->
+                <div class="order-total">
+                    <strong>Total: <span class="price">$0.00</span></strong>
+                </div>
+
+                <!-- Add to Cart Button -->
+                <div class="order-actions">
+                    <button type="submit" class="pay-btn"><i class="fa-solid fa-bag-shopping"></i>
+                        Add to Cart
+                    </button>
+                </div>
+
+            </form>
+        </div>
+
+    </section>
+
+
+    <footer>
+        <p>
+            <i class="fa-solid fa-location-dot"></i> San Diego, CA |
+            <i class="fa-solid fa-phone"></i> (555) 123-4567
+        </p>
+    </footer>
+
+</body>
+</html>
