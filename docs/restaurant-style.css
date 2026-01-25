@@ -31,7 +31,7 @@ body {
     cursor: pointer;
 }
 
-/* Restaurant name */
+/* RESTAURANT NAME */
 .header-left h1 {
     margin: 0;
     margin-left: 50px; 
@@ -133,7 +133,7 @@ h5 {
     color: #6b7280;
 }
 
-/* Price */
+/* PRICE */
 
 .price {
     display: inline-block;
@@ -176,23 +176,23 @@ footer p {
     font-size: 14px;
 }
 
-/* To-Go Page Layout */
+/* To-Go PAGE LAYOUT */
 .to-go-layout {
     display: flex;
     gap: 30px;
 }
 
-/* Left Featured Column */
+/* LEFT FEATURED COLUMN */
 .featured-column {
     width: 30%;
 }
 
-/* Right Order Column */
+/* RIGHT FEATURED COLUMN */
 .order-column {
     width: 70%;
 }
 
-/* Featured Dish Cards */
+/* FEATURED DISH CARDS */
 .dish-card {
     margin-bottom: 20px;
     padding: 20px;
@@ -206,19 +206,19 @@ footer p {
     margin-bottom: 8px;
 }
 
-/* Featured dishes section header */
+/* FEATURED DISCHES SECTION CARDS */
 .featured-dishes {
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers content horizontally */
+    align-items: center;
     margin-bottom: 20px;
 }
 
 .featured-dishes h5 {
-    text-align: center; /* ensures the text is centered */
+    text-align: center; 
 }
 
-/* Menu Thumbnails */
+/* MENU THUMBNAILS */
 .menu-thumb {
     width: 50px;
     height: auto;
@@ -227,13 +227,13 @@ footer p {
     border-radius: 4px;
 }
 
-/* Total Section */
+/* TOTAL SECTION */
 .order-total {
     margin-top: 20px;
     text-align: right;
 }
 
-/* Action Button Row */
+/* ACTION BUTTON ROW */
 .order-actions {
     margin-top: 25px;
     text-align: right;
@@ -261,7 +261,7 @@ footer p {
     margin-bottom: 25px;
 }
 
-/* Order Summary */
+/* ORDER SUMMARY */
 
 .order-summary {
     text-align: center;
@@ -288,7 +288,7 @@ footer p {
     color: #888;
 }
 
-/* Payment Form */
+/* PAYMENT FORM */
 
 .payment-form {
     width: 100%;
@@ -318,7 +318,61 @@ footer p {
     gap: 20px;
 }
 
-/* Responsive */
+/* RESPONSIVE */
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+
+    /* Header */
+    .main-header {
+        padding: 20px 60px;
+    }
+
+    .header-left h1 {
+        font-size: 32px;
+        margin-left: 60px;
+    }
+
+    .nav-links {
+        gap: 40px;
+        margin-right: 15%;
+    }
+
+    /* Dish cards layout */
+    .dish-container {
+        gap: 30px;
+    }
+
+    .dish-card {
+        width: 30%;
+        padding: 25px;
+    }
+
+    /* To-Go layout */
+    .to-go-layout {
+        flex-direction: row;
+        gap: 40px;
+    }
+
+    .featured-column {
+        width: 30%;
+    }
+
+    .order-column {
+        width: 70%;
+    }
+
+    /* Checkout container */
+    .checkout-container {
+        max-width: 800px;
+        padding: 40px;
+    }
+
+    /* Forms */
+    .form-row {
+        flex-direction: row;
+    }
+}
 
 /* Tablet */
 @media (max-width: 1023px) {
@@ -358,7 +412,7 @@ footer p {
     }
 }
 
-/* Phone */
+/* PHONE */
 
 @media (max-width: 767px) {
 
